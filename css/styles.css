@@ -21,7 +21,7 @@
     --secondary-paragraph: 'BhuTuka Expanded One', cursive;
 
     --transparency: ;
-    --transition: all 0.35s linear;
+    --transition: all 0.3s linear;
     --shadow: 0 2px 7px rgb(146 161 176 / 15%);
 }
 
@@ -36,6 +36,10 @@ body {
     text-align: center;
     background-color: var(--background-color);
     margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
 }
 
 h1 {
@@ -237,12 +241,20 @@ button {
     border-radius: 10px;
     background-color: var(--secondary-bdgd-color);
     border: none;
-    
+    box-shadow: 6px 2px 7px rgba(36, 43, 49, 0.95);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+button:hover {
+    background-color: var(--heading-color);
+    color: var(--secondary-bdgd-color);
+    box-shadow: -1px -1px 4px 3px rgba(201, 205, 209, 0.95);
 }
 
 .callbtn {
     position: absolute;
-    left: 800px;
+    left: 750px;
     top: 700px;
 }
 
@@ -325,7 +337,7 @@ button {
 footer {
     background-color: var(--secondary-heading-color);
     color: var(--secondary-bdgd-color);
-    padding: 4rem;
+    padding: 4rem 4.7rem 0.6rem 4.7rem;
     margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(autofit, minmax(5, 1fr));
@@ -358,6 +370,7 @@ footer {
 .site {
     grid-column: 1/6;
     grid-row: 2;
+    font-size: 0.7rem;
 }
 
 .footlist {
