@@ -55,7 +55,7 @@ p {
 
 header {
     background-color: var(--secondary-heading-color);
-    padding: 3rem;    
+    padding:3rem 3rem 0.5rem;    
 }
 
 header #busTitle h1{
@@ -71,21 +71,18 @@ header #busTitle h1{
 .container {
     max-width: 100%;
     width: 15%;
-    
 }
-
 
 .navbar {
     width: 100%;
     margin: 0;
-    box-shadow: 0 2px 0 rgb(146 161 176 / 15%);
 }
 
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 62px;
+    /* height: 62px; */
 }
 
 .navbar .menu-items {
@@ -227,7 +224,28 @@ main {
     width: 65%;
     padding: 0.5rem;
     border: 2px solid var(--secondary-heading-color);
+    position: relative;
 }
+
+/* ***********************************************
+                   Button
+*********************************************** */
+
+button {
+    font-size: 2rem;
+    padding: 0.7rem;
+    border-radius: 10px;
+    background-color: var(--secondary-bdgd-color);
+    border: none;
+    
+}
+
+.callbtn {
+    position: absolute;
+    left: 800px;
+    top: 700px;
+}
+
 
 /* ***********************************************
                     Articles
