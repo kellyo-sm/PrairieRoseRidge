@@ -297,7 +297,7 @@ main {
 }
 
 .sec2-img img{
-    border-radius: 10%;
+    border-radius: 5%;
 }
 
 /* ***********************************************
@@ -310,12 +310,17 @@ footer {
     padding: 4rem;
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(autofit, minmax(2, 1fr));
+    grid-template-columns: repeat(autofit, minmax(5, 1fr));
+}
+
+.information {
+    grid-column: 1;
+    grid-row: 1/2;
+    align-items: center;
 }
 
 .logo {
     margin-bottom: 2rem;
-    grid-column: 1;
     font-size: 1.6rem;
 }
 
@@ -323,16 +328,17 @@ footer {
     font-family: var(--heading-font);
 }
 
-.address {
-    grid-column: 1/1;
-}
-
 .map {
-    grid-column: 1;
     margin-top: 2rem;
 }
 
 .map a {
     text-decoration: none;
     color: var(--secondary-bdgd-color);
+}
+
+.site {
+    grid-column: 2;
+    grid-row: 2;
+    
 }
