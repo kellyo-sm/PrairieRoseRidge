@@ -21,7 +21,9 @@
     <header>
         <div id="busTitle">
             <picture id="buslogo"><img src="..//images/PrairieRoseRidgeLogoNoBkgd1.6.png" alt="Prairie Rose Ridge Logo"></picture>
-            <a href="index.html"><h1>Prairie Rose Ridge</h1></a>
+            <a href="index.html">
+                <h1>Prairie Rose Ridge</h1>
+            </a>
         </div>
         <div class="header-phone">
             <p id="phone">1-605-899-5394</p>
@@ -57,63 +59,70 @@
 
     <main>
 
-        <div class="reservation">
-            <h1 id="resHeading">Make a Reservation with us!</h1>
-            <p>Whether you are traveling across the country and need to stay for one night or you would like to stay for longer, we have an option for you.</p>
+        <div class="containerRes">
+            <h1 class="brand"><span>Prairie Rose Ridge</span></h1>
+
+            <div class="wrapper">
+
+                <!-- COMPANY INFORMATION -->
+                <div class="company-info">
+                    <h3>Prairie Rose Ridge</h3>
+
+                    <ul class="contactUL">
+                        <li><i class="fa fa-road"></i>27063 SD HWY 89</li>
+                        <li><i class="fa fa-road"></i>Hot Springs, SD 57747</li>
+                        <li><i class="fa fa-phone"></i> (605)-899-5394</li>
+                        <li><i class="fa fa-envelope"></i> test@prairieroseridge.com</li>
+                    </ul>
+                </div>
+                <!-- End .company-info -->
+
+                <!-- CONTACT FORM -->
+                <div class="contact">
+                    <h3>Contact Us</h3>
+
+                    <form id="contact-form">
+
+                        <p>
+                            <label>Name</label>
+                            <input type="text" name="name" id="name" required>
+                        </p>
+
+                        <p>
+                            <label>Company</label>
+                            <input type="text" name="company" id="company">
+                        </p>
+
+                        <p>
+                            <label>E-mail Address</label>
+                            <input type="email" name="email" id="email" required>
+                        </p>
+
+                        <p>
+                            <label>Phone Number</label>
+                            <input type="text" name="phone" id="phone">
+                        </p>
+
+                        <p class="full">
+                            <label>Message</label>
+                            <textarea name="message" rows="5" id="message"></textarea>
+                        </p>
+
+                        <p class="full">
+                            <button type="submit">Submit</button>
+                        </p>
+
+                    </form>
+                    <!-- End #contact-form -->
+                </div>
+                <!-- End .contact -->
+
+            </div>
+            <!-- End .wrapper -->
+
         </div>
 
-        <div class="resCards">
-        
-        <figure class="image-block">
-            <h1>One Night Stay</h1>
-            <img src="../images/Card1.webp"
-                alt="Prairie Rose Ridge Landscape" />
-            <figcaption>
-                <h3>
-                    More Info
-                </h3>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
-                    tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
-                    semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                <button>
-                    More Info
-                </button>
-            </figcaption>
-        </figure>
 
-        <figure class="image-block">
-            <h1>By Week</h1>
-            <img src="../images/Card2web.webp" alt="Prairie Rose Ridge Landscape" />
-            <figcaption>
-                <h3>
-                    More Info
-                </h3>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
-                    tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
-                    semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                <button>
-                    More Info
-                </button>
-            </figcaption>
-        </figure>
-
-        <figure class="image-block">
-            <h1>By Month</h1>
-            <img src="../images/Card3web.webp" alt="Prairie Rose Ridge Landscape" />
-            <figcaption>
-                <h3>
-                    More Info
-                </h3>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
-                    tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
-                    semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                <button>
-                    More Info
-                </button>
-            </figcaption>
-        </figure>
-
-        </div>
     </main>
 
     <footer>
@@ -149,6 +158,7 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="reservations.html">Reservations</a></li>
+                
             </ul>
         </div>
 
