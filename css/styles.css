@@ -236,11 +236,7 @@ main {
 }
 
 #hero-img {
-    margin: 2rem;
-    width: 65%;
-    padding: 0.5rem;
-    border: 2px solid var(--secondary-heading-color);
-    position: relative;
+   width: 75%;
 }
 
 /* ***********************************************
@@ -248,7 +244,7 @@ main {
 *********************************************** */
 
 button {
-    font-size: 2rem;
+    font-size: 1.2rem;
     padding: 0.7rem;
     border-radius: 10px;
     background-color: var(--secondary-bdgd-color);
@@ -265,9 +261,11 @@ button:hover {
 }
 
 .callbtn {
-    position: absolute;
-    left: 750px;
-    top: 700px;
+    float: left;
+    margin-bottom: 2rem;
+    margin-left: 10rem;
+    width: 10rem;
+    
 }
 
 
@@ -276,8 +274,10 @@ button:hover {
 *********************************************** */
 
 .skills {
-    margin: 0 auto;
+    margin: 0 2rem;
     display: flex;
+    flex-wrap: wrap;
+    
 }
 
 .skill {
@@ -315,7 +315,7 @@ button:hover {
 }
 
 .skill-text {
-    padding: 0 2rem 1rem 2rem;
+    padding: 0 2rem 0 1rem;
 }
 
 /* ***********************************************
@@ -323,13 +323,15 @@ button:hover {
 *********************************************** */
 
 .sec2 {
-    margin: 2rem auto;
-    width: 850px;
+    margin: 1rem auto;
+    
+    
 }
 
 .sec-desc {
-    float: right;
-    margin: 6rem 2rem auto;
+    /* float: right; */
+    /* margin: 1rem 2rem auto; */
+    margin: 0 auto 5rem auto;
 }
 
 .sec-desc h2 {
@@ -340,6 +342,7 @@ button:hover {
 
 .sec2-img img{
     border-radius: 5%;
+    max-width: 60%;
 }
 
 /* ***********************************************
@@ -359,12 +362,7 @@ button:hover {
 }
 
 .brand {
-    text-align: center;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-left: 8rem;
-    margin-bottom: 2rem;
+    margin-left: 1rem;
 }
 
 .brand span {
@@ -501,6 +499,7 @@ button:hover {
 
 .resCards {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .image-block {
@@ -613,6 +612,11 @@ figure button {
     margin-top: 0.5rem;
 }
 
+.about-txt {
+    text-align: center;
+    margin: 0 7rem;
+}
+
 
 /* ***********************************************
                     Footer
@@ -673,9 +677,9 @@ footer {
 }
 
 
-@media (min-width: 43rem) {
+@media (min-width: 36rem) {
     main {
-        max-width: 1400px;
+        max-width: 1000px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(auto-fit, min-max(4, 1fr));
@@ -689,11 +693,36 @@ footer {
         width: 75%!important;
 
     }
+
+    .skills {
+        margin: 0 auto;
+    }
+    
+    button {
+        font-size: 2rem;
+    }
+
+    .callbtn {
+        position: absolute;
+        left: 450px;
+        top: 425px;
+    }
+
+    .sec2 {
+        
+        width: 750rem;
+    }
+
+    .brand {
+        
+        text-align: center; 
+        
+    }
 }
 
-@media (min-width: 60rem) {
+@media (min-width: 63rem) {
     main {
-        max-width: 1600px;
+        max-width: 1200px;
         grid-template-columns: repeat(auto-fit, min-max(4, 1fr));
     }
 
@@ -705,5 +734,41 @@ footer {
     #buslogo img {
         width: 100%!important;
     
+    }
+
+    #hero-img {
+        grid-column: 1;
+        margin: 2rem;
+        width: 65%;
+        padding: 0.5rem;
+        border: 2px solid var(--secondary-heading-color);
+    }
+
+    .skills {
+        float: left;
+        width: 90%;
+        min-height: 15rem;
+        max-height: 20rem;
+        margin: 0 auto;
+    }
+
+    .callbtn {
+        position: absolute;
+        left: 750px;
+        top: 650px;
+    }
+
+    .sec2 {
+        margin: 2rem auto 0 auto;
+        width: 850px;
+    }
+
+    .brand {
+        text-align: center;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        /* margin-left: 20rem; */
+        margin-bottom: 2rem;
     }
 }
